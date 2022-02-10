@@ -73,6 +73,32 @@ function handleMessage(sender_psid, received_message) {
     // Check if the message contains text
     if (received_message.text) {
 
+        if (received_message.text === 'Gửi ảnh đồ gỗ') {
+            response = {
+                "attachment": {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "generic",
+                        "elements": [{
+                            "title": "Is this the right picture?",
+                            "subtitle": "Tap a button to answer.",
+                            "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
+                            "buttons": [{
+                                    "type": "postback",
+                                    "title": "Yes!",
+                                    "payload": "yes",
+                                },
+                                {
+                                    "type": "postback",
+                                    "title": "No!",
+                                    "payload": "no",
+                                }
+                            ],
+                        }]
+                    }
+                }
+            }
+        }
         // Create the payload for a basic text message
         response = {
             "text": `You sent the message: "${received_message.text}". Now send me an image!`
