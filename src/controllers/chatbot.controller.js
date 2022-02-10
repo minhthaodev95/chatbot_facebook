@@ -80,21 +80,54 @@ function handleMessage(sender_psid, received_message) {
                     "payload": {
                         "template_type": "generic",
                         "elements": [{
-                            "title": "Is this the right picture?",
-                            "subtitle": "Tap a button to answer.",
-                            "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
-                            "buttons": [{
-                                    "type": "postback",
-                                    "title": "Yes!",
-                                    "payload": "yes",
-                                },
-                                {
-                                    "type": "postback",
-                                    "title": "No!",
-                                    "payload": "no",
-                                }
-                            ],
-                        }]
+                                "title": "Is this the right picture?",
+                                "subtitle": "Tap a button to answer.",
+                                "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
+                                "buttons": [{
+                                        "type": "postback",
+                                        "title": "Yes!",
+                                        "payload": "yes",
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "title": "No!",
+                                        "payload": "no",
+                                    }
+                                ],
+                            },
+                            {
+                                "title": "Is this the right picture?",
+                                "subtitle": "Tap a button to answer.",
+                                "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
+                                "buttons": [{
+                                        "type": "postback",
+                                        "title": "Yes!",
+                                        "payload": "yes",
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "title": "No!",
+                                        "payload": "no",
+                                    }
+                                ],
+                            },
+                            {
+                                "title": "Is this the right picture?",
+                                "subtitle": "Tap a button to answer.",
+                                "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
+                                "buttons": [{
+                                        "type": "postback",
+                                        "title": "Yes!",
+                                        "payload": "yes",
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "title": "No!",
+                                        "payload": "no",
+                                    }
+                                ],
+                            }
+                        ]
                     }
                 }
             }
