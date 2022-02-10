@@ -80,53 +80,85 @@ function handleMessage(sender_psid, received_message) {
                     "payload": {
                         "template_type": "generic",
                         "elements": [{
-                                "title": "Is this the right picture?",
-                                "subtitle": "Tap a button to answer.",
+                                "title": "Bộ bàn ghế gỗ cẩm",
+                                "subtitle": "22.000.000 VNĐ",
                                 "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
                                 "buttons": [{
                                         "type": "postback",
-                                        "title": "Yes!",
+                                        "title": "Xem chi tiết...",
                                         "payload": "yes",
                                     },
                                     {
                                         "type": "postback",
-                                        "title": "No!",
+                                        "title": "Đặt hàng",
                                         "payload": "no",
                                     }
                                 ],
                             },
                             {
-                                "title": "Is this the right picture?",
-                                "subtitle": "Tap a button to answer.",
-                                "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
+                                "title": "Bộ bàn ghế gỗ cẩm",
+                                "subtitle": "22.000.000 VNĐ",
+                                "image_url": 'https://noithatdogohcm.com/upload/images/bo-ban-ghe-go-cam-lai-tay-16(1).JPG',
                                 "buttons": [{
                                         "type": "postback",
-                                        "title": "Yes!",
+                                        "title": "Xem chi tiết...",
                                         "payload": "yes",
                                     },
                                     {
                                         "type": "postback",
-                                        "title": "No!",
+                                        "title": "Đặt hàng",
                                         "payload": "no",
                                     }
                                 ],
                             },
                             {
-                                "title": "Is this the right picture?",
-                                "subtitle": "Tap a button to answer.",
-                                "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
+                                "title": "Bộ bàn ghế gỗ cẩm",
+                                "subtitle": "22.000.000 VNĐ",
+                                "image_url": 'https://noithatdogohcm.com/upload/images/bo-ban-ghe-go-cam-lai-tay-16%20(3).JPG',
                                 "buttons": [{
                                         "type": "postback",
-                                        "title": "Yes!",
+                                        "title": "Xem chi tiết...",
                                         "payload": "yes",
                                     },
                                     {
                                         "type": "postback",
-                                        "title": "No!",
+                                        "title": "Đặt hàng",
                                         "payload": "no",
                                     }
                                 ],
-                            }
+                            },
+                            {
+                                "title": "Bộ bàn ghế gỗ cẩm",
+                                "subtitle": "22.000.000 VNĐ",
+                                "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
+                                "buttons": [{
+                                        "type": "postback",
+                                        "title": "Xem chi tiết...",
+                                        "payload": "yes",
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "title": "Đặt hàng",
+                                        "payload": "no",
+                                    }
+                                ],
+                            },
+                            {
+                                "title": "Bộ bàn ghế gỗ cẩm",
+                                "subtitle": "22.000.000 VNĐ",
+                                "image_url": 'https://noithatdogohcm.com/upload/images/can-ban-do-go-cu.JPG',
+                                "buttons": [{
+                                        "type": "postback",
+                                        "title": "Xem chi tiết...",
+                                        "payload": "yes",
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "title": "Đặt hàng",
+                                        "payload": "no",
+                                    }
+                                ],
+                            },
                         ]
                     }
                 }
