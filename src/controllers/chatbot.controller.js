@@ -1,5 +1,6 @@
 import express from "express";
 const request = require('request');
+import ban_ghe from "../data/fake_data";
 require('dotenv').config();
 // Your verify token. Should be a random string.
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
@@ -107,38 +108,38 @@ function handleMessage(sender_psid, received_message) {
     callSendAPI(sender_psid, response);
 }
 // Handle Postback
-function handlePostback(sender_psid, received_postback) {
-    let response;
+// function handlePostback(sender_psid, received_postback) {
+//     let response;
 
-    // Get the payload for the postback
-    let payload = received_postback.payload;
+//     // Get the payload for the postback
+//     let payload = received_postback.payload;
 
 
-    switch (payload) {
-        case "product1":
-            response = {
-                "text": "Bộ bàn ghế gỗ cẩm 1"
-            }
-            break;
-        case "product2":
-            response = {
-                "text": "Bộ bàn ghế gỗ cẩm 2"
-            }
-            break;
+//     switch (payload) {
+//         case "product1":
+//             response = {
+//                 "text": "Bộ bàn ghế gỗ cẩm 1"
+//             }
+//             break;
+//         case "product2":
+//             response = {
+//                 "text": "Bộ bàn ghế gỗ cẩm 2"
+//             }
+//             break;
 
-        default:
-            break;
-    }
+//         default:
+//             break;
+//     }
 
-    // // Set the response based on the postback payload
-    // if (payload === 'product1') {
-    //     response = { "text": "Thanks!" }
-    // } else if (payload === 'no') {
-    //     response = { "text": "Oops, try sending another image." }
-    // }
-    // Send the message to acknowledge the postback
-    callSendAPI(sender_psid, response);
-}
+//     // // Set the response based on the postback payload
+//     // if (payload === 'product1') {
+//     //     response = { "text": "Thanks!" }
+//     // } else if (payload === 'no') {
+//     //     response = { "text": "Oops, try sending another image." }
+//     // }
+//     // Send the message to acknowledge the postback
+//     callSendAPI(sender_psid, response);
+// }
 
 
 function callSendAPI(sender_psid, response) {
