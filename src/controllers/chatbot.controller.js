@@ -86,12 +86,12 @@ function handleMessage(sender_psid, received_message) {
                                 "buttons": [{
                                         "type": "postback",
                                         "title": "Xem chi tiết...",
-                                        "payload": "yes",
+                                        "payload": "product1",
                                     },
                                     {
                                         "type": "postback",
                                         "title": "Đặt hàng",
-                                        "payload": "no",
+                                        "payload": "product:1",
                                     }
                                 ],
                             },
@@ -102,7 +102,7 @@ function handleMessage(sender_psid, received_message) {
                                 "buttons": [{
                                         "type": "postback",
                                         "title": "Xem chi tiết...",
-                                        "payload": "yes",
+                                        "payload": "product2",
                                     },
                                     {
                                         "type": "postback",
@@ -182,12 +182,29 @@ function handlePostback(sender_psid, received_postback) {
     // Get the payload for the postback
     let payload = received_postback.payload;
 
-    // Set the response based on the postback payload
-    if (payload === 'yes') {
-        response = { "text": "Thanks!" }
-    } else if (payload === 'no') {
-        response = { "text": "Oops, try sending another image." }
+
+    switch (payload) {
+        case "product1":
+            response = {
+                "text": "Bộ bàn ghế gỗ cẩm 1"
+            }
+            break;
+        case "product2":
+            response = {
+                "text": "Bộ bàn ghế gỗ cẩm 2"
+            }
+            break;
+
+        default:
+            break;
     }
+
+    // // Set the response based on the postback payload
+    // if (payload === 'product1') {
+    //     response = { "text": "Thanks!" }
+    // } else if (payload === 'no') {
+    //     response = { "text": "Oops, try sending another image." }
+    // }
     // Send the message to acknowledge the postback
     callSendAPI(sender_psid, response);
 }
