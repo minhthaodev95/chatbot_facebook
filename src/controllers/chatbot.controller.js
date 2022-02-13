@@ -98,7 +98,25 @@ function handleMessage(sender_psid, received_message) {
         } else {
             // Create the payload for a basic text message
             response = {
-                "text": `You sent the message: "${received_message.text}". Now send me an image!`
+                "attachment": {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": "Chào bạn, chúng tôi có thể giúp gì cho bạn ?",
+                        "buttons": [{
+                                "type": "postback",
+                                "title": "Danh mục sản phẩm",
+                                "payload": "show_menu"
+                            },
+                            {
+                                "type": "web_url",
+                                "url": "https://www.messenger.com",
+                                "title": "Visit Messenger"
+                            },
+
+                        ]
+                    }
+                }
             }
         }
 
@@ -129,6 +147,11 @@ function handlePostback(sender_psid, received_postback) {
         case "3":
             response = {
                 "text": "Bộ bàn ghế gỗ cẩm 2"
+            }
+            break;
+        case "show_menu":
+            response = {
+                "text": "Show menu danh sach san pham"
             }
             break;
 
